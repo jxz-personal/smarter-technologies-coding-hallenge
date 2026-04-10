@@ -11,12 +11,16 @@ This project implements an automated sorting algorithm for a robotic package han
 Packages are classified using the following rules:
 
 ### Bulky Packages
+
 A package is considered **bulky** if:
+
 - Its volume is greater than or equal to 1,000,000 cm³, OR
 - Any single dimension (width, height, or length) is greater than or equal to 150 cm
 
 ### Heavy Packages
+
 A package is considered **heavy** if:
+
 - Its mass is greater than or equal to 20 kg
 
 ### Classification Logic
@@ -30,12 +34,14 @@ A package is considered **heavy** if:
 ## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/smarter-technologies-coding-hallenge.git
-cd smarter-technologies-coding-hallenge
+    git clone https://github.com/yourusername/smarter-technologies-coding-hallenge.git
+    cd smarter-technologies-coding-hallenge
 ```
 
 2. Ensure you have Python 3.x installed:
+
 ```bash
 python --version
 ```
@@ -69,23 +75,26 @@ print(result)  # Output: REJECTED
 Sorts a package based on its dimensions and mass.
 
 **Parameters:**
+
 - `width` (int/float): Width of the package in centimeters
 - `height` (int/float): Height of the package in centimeters
 - `length` (int/float): Length of the package in centimeters
 - `mass` (int/float): Mass of the package in kilograms
 
 **Returns:**
+
 - `"STANDARD"`: Small and light package that requires standard handling
 - `"SPECIAL"`: Package that requires special handling (either bulky or heavy)
 - `"REJECTED"`: Package that cannot be handled (both bulky and heavy)
 
 **Examples:**
+
 ```python
-sort(100, 100, 100, 10)   # Returns "SPECIAL" (bulky by volume)
-sort(150, 10, 10, 5)      # Returns "SPECIAL" (bulky by dimension)
-sort(10, 10, 10, 20)      # Returns "SPECIAL" (heavy)
-sort(100, 100, 100, 20)   # Returns "REJECTED" (both bulky and heavy)
-sort(1, 1, 1, 1)          # Returns "STANDARD" (minimum values)
+    sort(100, 100, 100, 10)   # Returns "SPECIAL" (bulky by volume)
+    sort(150, 10, 10, 5)      # Returns "SPECIAL" (bulky by dimension)
+    sort(10, 10, 10, 20)      # Returns "SPECIAL" (heavy)
+    sort(100, 100, 100, 20)   # Returns "REJECTED" (both bulky and heavy)
+    sort(1, 1, 1, 1)          # Returns "STANDARD" (minimum values)
 ```
 
 ## Running Tests
@@ -95,18 +104,19 @@ The project includes comprehensive unit tests covering all sorting scenarios.
 ### Run All Tests
 
 ```bash
-python -m unittest robotic_package_sort_test.py
+    python -m unittest robotic_package_sort_test.py
 ```
 
 ### Run Tests with Verbose Output
 
 ```bash
-python -m unittest robotic_package_sort_test.py -v
+    python -m unittest robotic_package_sort_test.py -v
 ```
 
 ### Test Coverage
 
 The test suite includes:
+
 - **STANDARD Stack Tests**: Validates packages that are neither bulky nor heavy
 - **SPECIAL Stack Tests (Bulky Only)**: Tests packages that are bulky but not heavy
 - **SPECIAL Stack Tests (Heavy Only)**: Tests packages that are heavy but not bulky
@@ -115,13 +125,13 @@ The test suite includes:
 
 ## Project Structure
 
-```
-smarter-technologies-coding-hallenge/
-├── README.md                          # This file
-├── robotic_package_sort.py            # Core sorting algorithm
-└── robotic_package_sort_test.py       # Unit tests
+```text
+    smarter-technologies-coding-hallenge/
+    ├── README.md                          # This file
+    ├── robotic_package_sort.py            # Core sorting algorithm
+    └── robotic_package_sort_test.py       # Unit tests
 ```
 
 ## License
 
-This project is provided as-is for educational and commercial use.
+This project is provided as-is for job application evaluation.

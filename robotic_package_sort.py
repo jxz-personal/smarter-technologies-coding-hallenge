@@ -7,9 +7,9 @@ def sort(width, height, length, mass):
     - Heavy: Mass >= 20 kg.
     
     Returns:
-    - REJECTED: Both bulky and heavy.
-    - SPECIAL: Either bulky or heavy (but not both).
     - STANDARD: Neither bulky nor heavy.
+    - SPECIAL: Either bulky or heavy (but not both).
+    - REJECTED: Both bulky and heavy.
     """
     
     # Calculate volume
