@@ -40,7 +40,7 @@ A package is considered **heavy** if:
     cd smarter-technologies-coding-challenge
 ```
 
-1. Ensure you have Python 3.x installed:
+2. Ensure you have Python 3.x installed:
 
 ```bash
 python --version
