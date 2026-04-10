@@ -36,8 +36,8 @@ A package is considered **heavy** if:
 1. Clone the repository:
 
 ```bash
-    git clone https://github.com/yourusername/smarter-technologies-coding-hallenge.git
-    cd smarter-technologies-coding-hallenge
+    git clone https://github.com/yourusername/smarter-technologies-coding-challenge.git
+    cd smarter-technologies-coding-challenge
 ```
 
 2. Ensure you have Python 3.x installed:
@@ -126,7 +126,7 @@ The test suite includes:
 ## Project Structure
 
 ```text
-    smarter-technologies-coding-hallenge/
+    smarter-technologies-coding-challenge/
     ├── README.md                          # This file
     ├── robotic_package_sort.py            # Core sorting algorithm
     └── robotic_package_sort_test.py       # Unit tests
